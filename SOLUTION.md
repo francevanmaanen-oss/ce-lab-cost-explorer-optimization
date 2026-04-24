@@ -1,7 +1,7 @@
 # Lab Solution: AWS Cost Explorer and Cost Optimization
 
-**Student Name:** ___________________________  
-**Date:** ___________________________  
+**Student Name:** France van Maanen
+**Date:** 24 April 2026  
 **Lab Completion Time:** ___________ minutes
 
 ---
@@ -11,9 +11,9 @@
 ### Screenshot 1: Cost Explorer Dashboard
 ![Cost Explorer](screenshots/01-cost-explorer-dashboard.png)
 
-**Date Cost Explorer enabled (if new):** ___________________________
+**Date Cost Explorer enabled (if new):** by default it was already enabled
 
-**Account has usage history:** ☐ Yes ☐ No (If no, practiced with interface)
+**Account has usage history:** ☐ Yes x No (If no, practiced with interface)
 
 ---
 
