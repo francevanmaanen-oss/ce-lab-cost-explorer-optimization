@@ -504,47 +504,35 @@ Deadline: ___________________________
 
 **Your answer:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+Once a week to keep tabs if resources are allocated efficiently and optimize immediately to minimize unnecessary costs. 
 ```
 
 ### 2. Why are cost allocation tags important for enterprise AWS accounts?
 
 **Your answer:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+To be able to quickly find relevant costs according to value and purpose
 ```
 
 ### 3. Describe the trade-offs between Reserved Instances and On-Demand.
 
 **Your answer:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+Reserved instances are much cheaoer and best for predicatability. On demand is a more expensive option and companies have to pay full price per hour./second. In general, it is a matter of lower costs or paying more for flexibility. 
 ```
 
 ### 4. What is the value of Cost Anomaly Detection?
 
 **Your answer:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+It is an early warning system to detect unexpected cost increases and uncommon spending patterns. By receiving these alert, user can optimize accordingly and configure to lower expenses. 
 ```
 
 ### 5. How would you present cost optimization findings to non-technical stakeholders?
 
 **Your answer:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+By using examples from every day life to translate technical issues into a business language. Visuals help as well and just story telling the big picture. Highlight the savings opportunities and explain trafe-off clearly. 
 ```
 
 ---
@@ -555,13 +543,13 @@ _____________________________________________________________
 
 | Skill | Before Lab | After Lab | Growth |
 |-------|-----------|-----------|--------|
-| Using Cost Explorer | ___/5 | ___/5 | +___ |
-| Analyzing cost trends | ___/5 | ___/5 | +___ |
-| Cost allocation tags | ___/5 | ___/5 | +___ |
-| Identifying optimizations | ___/5 | ___/5 | +___ |
-| Reserved Instance planning | ___/5 | ___/5 | +___ |
-| Cost reporting | ___/5 | ___/5 | +___ |
-| Anomaly detection | ___/5 | ___/5 | +___ |
+| Using Cost Explorer | 1/5 | 4/5 | +3 |
+| Analyzing cost trends | 3/5 | 4/5 | +1 |
+| Cost allocation tags | 4/5 | 4/5 | +0 |
+| Identifying optimizations | 2/5 | 3/5 | +1 |
+| Reserved Instance planning | 3/5 | 4/5 | +1 |
+| Cost reporting | 1/5 | 4/5 | +3 |
+| Anomaly detection | 3/5 | 4/5 | +1 |
 
 ---
 
