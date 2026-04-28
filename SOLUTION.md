@@ -24,16 +24,15 @@
 **Screenshot 2: 6-Month Trend**
 ![6-Month Trend](screenshots/02-6-month-trend.png)
 
-**Total spend (last 6 months):** $_______________
+**Total spend (last 6 months):** $3,125.67
 
-**Average monthly:** $_______________
+**Average monthly:** $520.94
 
-**Highest month:** _________________, $_______________
+**Highest month:** October, around $800-$900
 
 **Reason for highest month:**
 ```
-_____________________________________________________________
-_____________________________________________________________
+On demand services for EC2-other services
 ```
 
 ---
@@ -45,10 +44,7 @@ _____________________________________________________________
 
 **Observations about daily patterns:**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+No data to work on but looking from the 6 month period, although monthly, EC2 occupies a big part of the costs, it also seems that tax  monthly also costs a lot and VPC. 
 ```
 
 ---
@@ -61,11 +57,11 @@ _____________________________________________________________
 ![Top Services](screenshots/04-top-services.png)
 
 **Top 5 Services:**
-1. ___________________________: $_______________
-2. ___________________________: $_______________
-3. ___________________________: $_______________
-4. ___________________________: $_______________
-5. ___________________________: $_______________
+1. EC2-Other: $180.19
+2. Tax: $98.89
+3. VPC: $93.06
+4. EC2-instances: $76.31
+5. Elastic Load Balancing: $56.42
 
 ---
 
@@ -74,17 +70,17 @@ _____________________________________________________________
 **Screenshot 5: EC2 Breakdown**
 ![EC2 Costs](screenshots/05-ec2-breakdown.png)
 
-**Most expensive instance type:** ___________________________
+**Most expensive instance type:** t2.medium.
 
-**Total EC2 cost (last month):** $_______________
+**Total EC2 cost (last month):** $89.24
 
-**Percentage of total bill:** ___________%
+**Percentage of total bill:** 46%
 
 **Usage type breakdown:**
-- On-Demand: $_______________
-- Reserved Instances: $_______________
-- Spot Instances: $_______________
-- Data Transfer: $_______________
+- On-Demand: $37.20
+- Reserved Instances: $0
+- Spot Instances: $0
+- Data Transfer: $0
 
 ---
 
@@ -93,19 +89,19 @@ _____________________________________________________________
 **Screenshot 6: S3 Breakdown**
 ![S3 Costs](screenshots/06-s3-breakdown.png)
 
-**Total S3 cost:** $_______________
+**Total S3 cost:** $4.62
 
-**Storage cost:** $_______________
+**Storage cost:** $4.62
 
-**Request cost:** $_______________
+**Request cost:** $0
 
-**Data transfer cost:** $_______________
+**Data transfer cost:** $0
 
 **Storage breakdown by class:**
-- Standard: $_______________
-- Intelligent-Tiering: $_______________
-- Glacier: $_______________
-- Other: $_______________
+- Standard: $4.62
+- Intelligent-Tiering: $0
+- Glacier: $0
+- Other: $0
 
 ---
 
@@ -116,14 +112,16 @@ _____________________________________________________________
 **Screenshot 7: Regional Costs**
 ![Regional Breakdown](screenshots/07-regional-costs.png)
 
-**Most expensive region:** ___________________________
+**Most expensive region:** EU-ireland
 
-**Cost:** $_______________
+**Cost:** $80.09
 
 **Are you using resources in regions you don't need?**
 ```
-_____________________________________________________________
-_____________________________________________________________
+Yes, resources are being used in multiple regions (EU Ireland and EU Paris).
+The majority of costs come from EU Ireland, while EU Paris shows smaller usage.
+If the application does not require multi-region deployment, consolidating
+resources into a single region could reduce complexity and potential costs.
 ```
 
 ---
@@ -150,12 +148,15 @@ _____________________________________________________________
 **Screenshot 9: Activated Tags**
 ![Cost Allocation Tags](screenshots/09-activated-tags.png)
 
-**AWS-Generated tags activated:**
+**AWS-Generated tags activated:** 
 - [ ] aws:createdBy
 - [ ] aws:cloudformation:stack-name
 - [ ] Other: ___________________________
 
 **Activation date:** ___________________________
+
+
+*** Answer cannot be provide due to lack of data ***
 
 ---
 
@@ -169,26 +170,23 @@ _____________________________________________________________
 **Tagging Plan:**
 
 **Tag 1:**
-- Key: ___________________________
-- Values: _______________, _______________, _______________
-- Purpose: _______________________________________________
+- Key: Project
+- Values: CloudBootcamp
+- Purpose: Project type
 
 **Tag 2:**
-- Key: ___________________________
-- Values: _______________, _______________, _______________
-- Purpose: _______________________________________________
+- Key: Name
+- Values: week2-web-server
+- Purpose: The name of the EC2 instance
 
 **Tag 3:**
-- Key: ___________________________
-- Values: _______________, _______________, _______________
-- Purpose: _______________________________________________
+- Key: Environment
+- Values: Development
+- Purpose: Which team does this tag belong
 
 **How will these tags help with cost management?**
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+Tags help with grouping and organizing costs overview to share with the appropriate teams in a more efficient and concise way.
 ```
 
 ---
@@ -218,6 +216,8 @@ _____________________________________________________________
 2. ___________________________: _______%
 3. ___________________________: _______%
 
+**Pie chart option not available**
+
 ---
 
 ### Report 3: Daily Cost Monitor
@@ -227,7 +227,7 @@ _____________________________________________________________
 
 **How often will you review this report?**
 ```
-_____________________________________________________________
+Once a week is the rule of thumb to monitoring costs. Best practice would probably be once in the beginning of the week and once more before the week ends. 
 ```
 
 ---
@@ -239,13 +239,13 @@ _____________________________________________________________
 **Screenshot 14: Anomaly Detection Monitor**
 ![Anomaly Monitor](screenshots/14-anomaly-monitor.png)
 
-**Monitor name:** ___________________________
+**Monitor name:** All Services Cost Monitor
 
-**Threshold:** $_______________
+**Threshold:** $10
 
-**SNS topic:** ___________________________
+**SNS topic:** cost-anomaly-alerts
 
-**Email confirmed:** ☐ Yes ☐ No
+**Email confirmed:** x Yes ☐ No
 
 ---
 
@@ -255,7 +255,7 @@ _____________________________________________________________
 ![Service Monitor](screenshots/15-service-monitor.png)
 
 **Services monitored:**
-- [ ] EC2
+- [x] EC2
 - [ ] S3
 - [ ] RDS
 - [ ] Other: ___________________________
@@ -268,6 +268,8 @@ _____________________________________________________________
 
 **Screenshot 16: Optimization Recommendations**
 ![Recommendations](screenshots/16-recommendations.png)
+
+** No data to work with **
 
 **Top 3 Recommendations:**
 
@@ -306,10 +308,12 @@ _____________________________________________________________
 
 **Idle resources identified:**
 
+No unattached EBS volumes were found, indicating there are no unnecessary storage resources incurring cost.
+
 **Unattached EBS Volumes:**
-- Count: _____
-- Total size: _____ GB
-- Monthly cost: $_______________
+- Count: 0
+- Total size: 0 GB
+- Monthly cost: $0
 
 **Unassociated Elastic IPs:**
 - Count: _____
@@ -330,10 +334,10 @@ _____________________________________________________________
 
 ### Reserved Instance Analysis
 
-**Current On-Demand EC2 spend:** $_______________/month
+**Current On-Demand EC2 spend:** $89.24/month
 
 **Consistently running instances:**
-- Instance type: ___________________________
+- Instance type: t2.medium
 - Quantity: _____
 - Hours/month: _____
 
